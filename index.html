@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="digital-clock-wrap">
+        <div class="calendar-wrap">
+            <div class="week" id="week">
+                <div>SUN</div>
+                <div>MON</div>
+                <div>TUE</div>
+                <div>WED</div>
+                <div>THU</div>
+                <div>FRI</div>
+                <div>SAT</div>
+            </div>
+            
+            <div class="date-wrap">
+                <div class="day"></div>
+                <div class="divider">|</div>
+                <div class="month"></div>
+                <div class="divider">|</div>
+                <div class="year"></div>
+            </div>
+        </div>
+
+        <div class="digital-clock">
+            <div class="time">
+                <div class="hour">12</div>
+                <div class="dot">:</div>
+                <div class="min">05</div>
+                <div class="dot">:</div>
+                <div class="sec">30</div>
+                <div class="period">AM</div>
+            </div>
+        </div>
+
+        <div class="alarm-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

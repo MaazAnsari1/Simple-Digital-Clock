@@ -1,0 +1,113 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url('./digital-7/digital-7.ttf');
+}
+
+.digital-clock-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: clamp(5px, 1vw, 10px) solid #2d2d2d;
+    border-radius: 1.7vw;
+    padding: 0 clamp(4px, 2vw, 20px);
+    user-select: none;
+}
+
+.calendar-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3vw 2vw 0;
+}
+
+.week {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: clamp(14px, 2.5vw, 24px);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.week .active {
+    color: #fff;
+}
+
+.date-wrap {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: clamp(14px, 2.5vw, 24px);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    text-transform: uppercase;
+}
+
+.digital-clock {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour,
+.min,
+.sec {
+    padding: 1vw;
+    font-size: clamp(55px, 16vw, 200px);
+    font-family: 'Digital-7', sans-serif;
+    width: clamp(55px, 16vw, 200px);
+}
+
+.dot {
+    font-size: clamp(55px, 16vw, 200px);
+    font-family: 'digital-7', sans-serif;
+}
+
+.period {
+    padding: 1vw;
+    font-size: clamp(55px, 16vw, 200px);
+    font-family: 'Digital-7', sans-serif;
+    width: clamp(55px, 16vw, 200px);
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px){
+
+    .calendar-wrap {
+        flex-direction: column;
+        row-gap: 1vw;
+    }
+}
+
+@media screen and (max-width: 479px) and (min-width: 280px){
+
+    .calendar-wrap {
+        flex-direction: column;
+        row-gap: 1vw;
+    }
+}
