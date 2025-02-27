@@ -1,4 +1,3 @@
-/* General Styles */
 body {
     background-color: #000;
     color: #fff;
@@ -27,7 +26,6 @@ body {
 }
 
 .calendar-wrap {
-    /* border: 1px solid #fff; */
     display: flex;
     flex-direction: column;
     row-gap: 1vw;
@@ -36,7 +34,6 @@ body {
 }
 
 .week {
-    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
     column-gap: 2vw;
@@ -53,7 +50,6 @@ body {
 }
 
 .date-wrap {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     column-gap: 2vw;
@@ -67,7 +63,6 @@ body {
 }
 
 .digital-clock {
-    /* border: 1px solid green; */
     display: flex;
     flex-direction: row;
     position: relative;
@@ -77,7 +72,6 @@ body {
 }
 
 .time {
-    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,7 +81,6 @@ body {
 .hour,
 .min,
 .sec {
-    border: 1px solid #fff;
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -100,7 +93,6 @@ body {
 }
 
 .period {
-    border: 1px solid #fff;
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
