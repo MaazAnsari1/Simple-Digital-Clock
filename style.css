@@ -21,7 +21,7 @@ body {
     user-select: none;
     width: 90%;
     max-width: 1000px;
-    height: auto;
+    height: fit-content;
     max-height: 400px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
