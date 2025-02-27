@@ -85,6 +85,7 @@ body {
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
     width: clamp(55px, 16vw, 200px);
+    height: auto;
 }
 
 .dot {
@@ -97,6 +98,7 @@ body {
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
     width: clamp(55px, 16vw, 200px);
+    height: auto;
 }
 
 .invisible {
