@@ -1,6 +1,9 @@
+/* General Styles */
 body {
     background-color: #000;
     color: #fff;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
 }
 
 @font-face {
@@ -17,25 +20,32 @@ body {
     border-radius: 1.7vw;
     padding: 0 clamp(4px, 2vw, 20px);
     user-select: none;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .calendar-wrap {
+    /* border: 1px solid #fff; */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 1vw;
+    align-items: center;
     padding: 3vw 2vw 0;
 }
 
 .week {
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
-    column-gap: 1vw;
+    column-gap: 2vw;
     justify-content: center;
     align-items: center;
     color: #2d2d2d;
     font-weight: bold;
     font-size: clamp(14px, 2.5vw, 24px);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .week .active {
@@ -43,19 +53,21 @@ body {
 }
 
 .date-wrap {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
-    column-gap: 1vw;
+    column-gap: 2vw;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-weight: bold;
     font-size: clamp(14px, 2.5vw, 24px);
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
 }
 
 .digital-clock {
+    /* border: 1px solid green; */
     display: flex;
     flex-direction: row;
     position: relative;
@@ -65,6 +77,7 @@ body {
 }
 
 .time {
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,6 +87,7 @@ body {
 .hour,
 .min,
 .sec {
+    border: 1px solid #fff;
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -82,10 +96,11 @@ body {
 
 .dot {
     font-size: clamp(55px, 16vw, 200px);
-    font-family: 'digital-7', sans-serif;
+    font-family: 'Digital-7', sans-serif;
 }
 
 .period {
+    border: 1px solid #fff;
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -96,18 +111,18 @@ body {
     visibility: hidden;
 }
 
-@media screen and (max-width: 768px) and (min-width: 480px){
-
+@media screen and (max-width: 768px) {
     .calendar-wrap {
-        flex-direction: column;
-        row-gap: 1vw;
+        padding: 2vw;
     }
 }
 
-@media screen and (max-width: 479px) and (min-width: 280px){
+@media screen and (max-width: 479px) {
+    .digital-clock-wrap {
+        padding: 10px;
+    }
 
     .calendar-wrap {
-        flex-direction: column;
-        row-gap: 1vw;
+        padding: 1vw;
     }
 }

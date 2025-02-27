@@ -16,8 +16,8 @@ let showDot = true;
 function update() {
     showDot = !showDot;
     const now = new Date();
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    
     divider.forEach((d) => {
         if (showDot) {
             d.classList.add('invisible');
