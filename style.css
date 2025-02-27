@@ -17,11 +17,11 @@ body {
     transform: translate(-50%, -50%);
     border: clamp(5px, 1vw, 10px) solid #2d2d2d;
     border-radius: 1.7vw;
-    padding: 0 clamp(4px, 2vw, 20px);
+    padding: 3vw clamp(4px, 2vw, 20px) 0;
     user-select: none;
     /* width: clamp(280px, 70vw, 1000px); */
     width: auto;
-    height: clamp(80px, 30vw, 350px);
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -30,7 +30,7 @@ body {
     flex-direction: column;
     row-gap: 1vw;
     align-items: center;
-    padding: 3vw 2vw 0;
+    padding: 0 2vw 0;
 }
 
 .week {
@@ -81,7 +81,7 @@ body {
 .hour,
 .min,
 .sec {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -105,18 +105,3 @@ body {
     visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
-    .calendar-wrap {
-        padding: 2vw;
-    }
-}
-
-@media screen and (max-width: 479px) {
-    .digital-clock-wrap {
-        padding: 10px;
-    }
-
-    .calendar-wrap {
-        padding: 1vw;
-    }
-}
