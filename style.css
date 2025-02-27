@@ -21,7 +21,7 @@ body {
     user-select: none;
     /* width: clamp(280px, 70vw, 1000px); */
     width: auto;
-    height: clamp(40px, 30vw, 350px);
+    height: clamp(80px, 30vw, 350px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .period {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
