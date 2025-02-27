@@ -21,7 +21,7 @@ body {
     user-select: none;
     /* width: clamp(280px, 70vw, 1000px); */
     width: auto;
-    height: clamp(100px, 30vw, 350px);
+    height: clamp(40px, 30vw, 350px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -86,7 +86,6 @@ body {
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
     width: clamp(55px, 16vw, 200px);
-    height: auto;
 }
 
 .dot {
@@ -100,7 +99,6 @@ body {
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
     width: clamp(55px, 16vw, 200px);
-    height: auto;
 }
 
 .invisible {
