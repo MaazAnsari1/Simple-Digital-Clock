@@ -19,9 +19,8 @@ body {
     border-radius: 1.7vw;
     padding: 3vw clamp(4px, 2vw, 20px) 0;
     user-select: none;
-    /* width: clamp(280px, 70vw, 1000px); */
     width: auto;
-    height: auto;
+    height: fit-content;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
