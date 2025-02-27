@@ -80,27 +80,26 @@ body {
 .hour,
 .min,
 .sec {
-    border: 1px solid #fff;
-    padding: 1vw;
-    font-size: clamp(55px, 16vw, 200px);
-    font-family: 'Digital-7', sans-serif;
-    width: clamp(55px, 16vw, 200px);
-    height: auto;
-}
-
-.dot {
-    font-size: clamp(55px, 16vw, 200px);
-    font-family: 'Digital-7', sans-serif;
-    height: auto;
-}
-
-.period {
     /* border: 1px solid #fff; */
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
     width: clamp(55px, 16vw, 200px);
-    height: auto;
+    height: clamp(55px, 16vw, 200px);
+}
+
+.dot {
+    font-size: clamp(55px, 16vw, 200px);
+    font-family: 'Digital-7', sans-serif;
+}
+
+.period {
+    border: 1px solid #fff;
+    padding: 1vw;
+    font-size: clamp(55px, 16vw, 200px);
+    font-family: 'Digital-7', sans-serif;
+    width: clamp(55px, 16vw, 200px);
+    height: clamp(55px, 16vw, 200px);
 }
 
 .invisible {
