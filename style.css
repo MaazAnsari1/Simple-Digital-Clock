@@ -20,7 +20,6 @@ body {
     padding: 3vw clamp(4px, 2vw, 20px);
     user-select: none;
     width: auto;
-    /* height: clamp(100px, 24vw, 300px); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -80,7 +79,6 @@ body {
 .hour,
 .min,
 .sec {
-    /* border: 1px solid #fff; */
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -94,7 +92,6 @@ body {
 }
 
 .period {
-    border: 1px solid #fff;
     padding: 1vw;
     font-size: clamp(55px, 16vw, 200px);
     font-family: 'Digital-7', sans-serif;
@@ -106,3 +103,11 @@ body {
     visibility: hidden;
 }
 
+@media screen and (max-width: 480px) and (min-width: 280px){
+    .hour,
+    .min,
+    .sec,
+    .period {
+        padding: 1vw 1vw 0;
+    }
+}
